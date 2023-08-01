@@ -57,3 +57,8 @@ git clone https://github.com/garypang13/luci-theme-edge.git package/lean/luci-th
 # 删除lean里的百度文本（编译失败），增加百度PCS-web
 # rm -rf package/lean/baidupcs-web
 # git clone https://github.com/liuzhuoling2011/baidupcs-web.git package/lean/baidupcs-web
+
+# revert some commit that cause error when building
+git revert 14cc6d5a6d0297c6cb1690af93ac26c7016ac3b4
+git revert 6c0363e78cc2edf7f2368d03dc37e9fb78146c91
+
