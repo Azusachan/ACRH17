@@ -28,8 +28,10 @@
 # git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 # git clone https://github.com/sypopo/luci-theme-atmaterial.git package/lean/luci-theme-atmaterial
 # git clone https://github.com/sypopo/luci-theme-argon-mc.git package/lean/luci-theme-argon-mc
-git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/lean/luci-theme-opentomcat
-git clone https://github.com/garypang13/luci-theme-edge.git package/lean/luci-theme-edge
+# git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/lean/luci-theme-opentomcat
+# git clone https://github.com/garypang13/luci-theme-edge.git package/lean/luci-theme-edge
+git clone -b master https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone -b master https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 更新
 # ./scripts/feeds update -a && ./scripts/feeds install -a
@@ -57,8 +59,3 @@ git clone https://github.com/garypang13/luci-theme-edge.git package/lean/luci-th
 # 删除lean里的百度文本（编译失败），增加百度PCS-web
 # rm -rf package/lean/baidupcs-web
 # git clone https://github.com/liuzhuoling2011/baidupcs-web.git package/lean/baidupcs-web
-
-# remove some patches that cause error when building
-rm -f package/kernel/mac80211/patches/ath10k/988-ath10k-always-use-mac80211-loss-detection.patch
-rm -f package/kernel/ath10k-ct/patches/988-ath10k-always-use-mac80211-loss-detection.patch
-
