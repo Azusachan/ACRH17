@@ -59,3 +59,6 @@ git clone -b master https://github.com/jerrykuku/luci-app-argon-config package/l
 # 删除lean里的百度文本（编译失败），增加百度PCS-web
 # rm -rf package/lean/baidupcs-web
 # git clone https://github.com/liuzhuoling2011/baidupcs-web.git package/lean/baidupcs-web
+
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang feeds/packages/lang/golang
